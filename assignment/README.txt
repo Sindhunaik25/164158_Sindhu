@@ -3,5 +3,5 @@ Hello, good morning
 
 welcome!!!
 =======
-happy
->>>>>>> html-assignment
+happy deepavali
+>>>>>>> html-assignment 
