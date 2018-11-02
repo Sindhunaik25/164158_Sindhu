@@ -10,4 +10,8 @@ happy dasara
 happy deepavali
 >>>>>>> html-assignment 
 >>>>>>> css-assignment
+<<<<<<< HEAD
 kannada rajyotsava
+=======
+javascript assign
+>>>>>>> js-assignment
