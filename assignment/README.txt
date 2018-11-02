@@ -3,5 +3,10 @@ Hello, good morning
 
 welcome!!!
 =======
+<<<<<<< HEAD
 happy dasara
 >>>>>>> html-assignment
+=======
+happy deepavali
+>>>>>>> html-assignment 
+>>>>>>> css-assignment
