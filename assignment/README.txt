@@ -10,3 +10,4 @@ happy dasara
 happy deepavali
 >>>>>>> html-assignment 
 >>>>>>> css-assignment
+javascript assign
