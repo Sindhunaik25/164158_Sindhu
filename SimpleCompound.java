@@ -2,33 +2,21 @@ package com.sindhu;
 
 import java.util.Scanner;
 
-public class SimpleCompound {
+public class SimpleInterest {
 
-	
 	public static void main(String[] args) {
-		Scanner sc= new Scanner(System.in);
-		
-		System.out.println("principle=");
-		float p= sc.nextFloat();
-		
-		System.out.println("Time=");
-		float t= sc.nextFloat();
-		
-		System.out.println("rate=");
-		float r= sc.nextFloat();
-		
-		System.out.println("Simple Interest for the given values is:");
-		
-		float SI=(p*t*r)/100;
-		
-		System.out.println(SI);
-		
-		float compoundInterest= (float) (p*(Math.pow((1 + r / 100), t))); ;
-		
-		System.out.println("compond interest is:"+compoundInterest);
-
-
-		
+		Scanner sc=new Scanner(System.in);
+		float p,t,r;
+		System.out.println("Enter principle");
+		p=sc.nextFloat();
+		System.out.println("Enter time");
+		t=sc.nextFloat();
+		System.out.println("Enter rate of interset");
+		r=sc.nextFloat();
+        double SInterest=(p*t*r)/100;
+        System.out.println(SInterest+" =Simple Interest");
+        double CompoundInterest=(double)p*(Math.pow((1+r/100),t));
+        System.out.println(CompoundInterest+" =Compound Interest");
 	}
 
 }
