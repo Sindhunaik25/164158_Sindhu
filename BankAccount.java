@@ -59,8 +59,31 @@ public class BankAccount {
 	//service methods
 	public void withdraw(double amount)
 	{
-		this.accountBalance-=amount;
-	}
+		//this.accountBalance-=amount;
+		if(amount<=0)
+		{
+			System.out.println("Amount should be more than zero");
+		}
+		else if(amount>accountBalance)
+		{
+			System.out.println("Account balance is "+accountBalance);
+			System.out.println("Enter valid amount");
+		}
+		else
+		{
+			accountBalance=accountBalance-amount;
+			if(accountBalance<1000){
+				System.out.println("Minimum 1000 should be maintained");
+				
+				}
+				else
+				{
+					System.out.println("Your balance is "+accountBalance);
+					System.out.println("Withdraw "+amount);
+				}
+			}
+			}
+	
 	
 	public void deposit(double amount)
 	{
@@ -71,6 +94,8 @@ public class BankAccount {
 	{
 		BankAccount acc=new BankAccount();
 		BankAccount acc2=new BankAccount("sindhu",6000);
+		acc2.withdraw(1000);
+		acc.withdraw(1000);
 	}
 	
 }
