@@ -1,26 +1,34 @@
 package com.assignment;
+import java.util.*;
 
 public class ArmstrongNumber {
-
-	public static void main(String[] args) {
+	public static void armstrong(int num)
+	{
 		int temp,count=0,a;
-		int n=153;
-		temp=n;
-		while(n>0)
+		temp=num;
+		while(num>0)
 		{
-			a=n%10;
-			n=n/10;
+			a=num%10;
+			num=num/10;
 			count=count+(a*a*a);
 		}
 		if(temp==count)
 		{
-			System.out.println("Armstrong Number");
+			System.out.println(count+"Armstrong Number");
 		
 		}
 		else
 		{
-			System.out.println("Not");
+			System.out.println("Not an Armstrong Number");
 		}
+
 	}
 
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		int number;
+		System.out.println("Enter the number");
+		number=sc.nextInt();
+		ArmstrongNumber.armstrong(number);
+}
 }
