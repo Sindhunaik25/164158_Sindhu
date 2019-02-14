@@ -1,5 +1,12 @@
-var express = require('express')
-var app = express();
-app.get('/home', function(req, res) {
-  res.end('Hello World!');
-}).listen(process.argv[2]);
+var fs = require('fs');
+ 
+fs.readdir('./',function(err,items){
+
+if(err)
+return console.error(err);
+
+
+    for(i=0;i<items.length;i++){
+        console.log(items[i]);
+    }
+});
