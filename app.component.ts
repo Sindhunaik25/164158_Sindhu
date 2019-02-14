@@ -6,7 +6,16 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'login-app';
-  name="Sindhu";
-  password="abcd";
+  title = 'myapp';
+  firstname="Sindhu";
+  lastname="Naik";
+  location:Address={
+    "street":"Siddapura",
+    "city":"sirsi"
+  };
+}
+class Address
+{
+  street:string;
+  city:string;
 }
